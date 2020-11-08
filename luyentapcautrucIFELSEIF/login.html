@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống đăng nhập</title>
+</head>
+<body>
+    <script>
+        let username = prompt('Enter your username', '')
+        if (username == 'admin'){
+            let password = prompt('Enter your password', '')
+            if (password == 'TheMaster'){
+                alert('Welcome!')
+            } else if (password == null){
+                alert('Canceled')
+            } else {
+                alert('Your password is incorrect')
+            }
+        } else if (username == null){
+            alert('Canceled')
+        } else {
+            alert('Your username is not available')
+        }
+    </script>
+</body>
+</html>
